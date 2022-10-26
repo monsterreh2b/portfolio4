@@ -1,11 +1,30 @@
 var next = document.querySelector(".nextBtn");
 var prev = document.querySelector(".prevBtn");
+var menu = document.querySelector(".sidebar-toggle");
+var sidebar = document.querySelector(".sidebar");
+var closeBtn = document.querySelector(".close-btn");
 
 console.log(next);
 console.log(prev);
+console.log(menu);
+console.log(sidebar);
+console.log(closeBtn);
 
 var slides = document.querySelectorAll(".slide");
 console.log(slides);
+
+function showMenu() {
+  //console.log("menu hello");
+  if (sidebar.classList.contains("show-sidebar")) {
+    sidebar.classList.remove("show-sidebar");
+  }
+  else {
+    sidebar.classList.add("show-sidebar");
+  }
+}
+
+menu.onclick = showMenu;
+closeBtn.onclick = showMenu;
 
 slides.forEach(function (slide, index) {
   console.log(slide);

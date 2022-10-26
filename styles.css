@@ -202,6 +202,7 @@ Slider
   place-items: center;
   transition: all 0.25s ease-in-out;
   text-align: center;
+  z-index: -1;
 }
 .slide-img {
   height: 100%;
